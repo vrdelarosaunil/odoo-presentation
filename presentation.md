@@ -67,30 +67,26 @@ After the Sales Order has been created and the products have been validated as a
 ![](images/created-invoice.png)
 
 ### Registering payments
-Once an invoice has been created, it can be payed by following these steps:
-1. Go to the Sales Order page, and click on "Invoices":
-![](images/sales-invoices.png)
-1. Click on send so the user can receive the invoice:
-![](images/send-invoice.png)
-1. Select the desired invoice delivery option, and click send:
-![](images/invoice-delivery-options.png)
-1. Once you have collected the payment from the customer, click on the "Pay" button.
-![](images/pay-invoice.png)
-1. On the following popup, validate the payment options and click on "Create Payment":
-![](images/create-payment.png)
-1. If the payment type was "Bank", you can confirm receiving the payment by clicking on "Payments", and then "Validate":
-![](images/invoice-payments.png)
-![](images/validate-payments.png)
 
-### Linking payments and invoices
-Once the payment has been validated, in the case of "Bank" payments, a corresponding bank statement must be registered to confirm the payment was real. This statement then must be reconciliated with your sales order's payment, in order to close the pending action items for the order. To do this, follow these steps:
-1. Click on the accounting option on Odoo's homepage:
-![](images/accounting.png)
-1. Click on the Transactions option:
-![](images/accounting-transactions.png)
-1. Create a new transaction, with a name to identify it later:
-![](images/new-transaction.png)
-1. Click on the newly created transaction entry:
-![](images/transaction-item.png)
-1. Click on "Reset" to be able to modify the entry, configure the values for the reconciliation, and the click on "Post":
-![](images/configure-transaction-entry.png)
+#### Complete payment
+Once the invoice has been created and sent, the business waits until the customer pays. Once he/she pays, we can register the payment as follow:
+1. Go to the Accounting Dashboard
+![](images/accounting-dashboard.png)
+1. Click on either "Bank" or "Cash", depending on how the user paid his/her invoice
+![](images/accounting-bank-cash.png)
+1. Click on "New" to create an entry, and when creating the entry, place the customer, the amount paid, and in the "Memo" field, place the invoice reference. Odoo will use these informations to automatically match the credit entry created with the invoice
+![](images/registering-accounting-entry.png)
+1. Check that the accounts and entries match with the desired values, and if they do, click on "Validate". This will link the received payment with the invoice.
+![](images/validate-accounting-entry.png)
+1. Validate that the invoice status has been updated accordingly
+![](images/validate-accounting-entry.png)  
+![](images/invoice-paid.png)
+
+#### Partial payments
+Sometimes, the user pays on mutiple installments, depending on the accords reached with the business. Partial payments are supported on Odoo, and the process is very similar as with "Complete payments", with a few differences:
+1. When a customer makes an initial payment that does not cover the total amount of the debt, the payment will still be registered, while the invoice status will be updated to "Partial" instead of "Paid".
+![](images/registering-partial-payment.png)
+![](images/invoice-partially-paid.png)
+1. Only when all the debt has been consolidated, will the invoice change to "Paid"
+![](images/partial-last-payment.png)
+![](images/invoice-completely-paid.png)
