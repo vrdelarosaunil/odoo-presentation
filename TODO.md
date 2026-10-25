@@ -10,9 +10,9 @@
 - [ ] Process documentation (X)  
   - [ ] Refine documentation  
 - [ ] API Integration  
-  - [ ] Consider a mechanism to seed data to the Odoo Deployment (Tiago)  
-    - [ ] Define how to import article  
-    - [ ] Create code/file with articles to import  
+  - [x] Consider a mechanism to seed data to the Odoo Deployment (Tiago)  
+    - [x] Define how to import article  
+    - [x] Create code/file with articles to import  
   - [ ] Consider a mechanism to reset the data on the Odoo Deployment (X)  
     - [ ] Define how to reset  
     - [ ] Code reseeding data  
