@@ -1,5 +1,5 @@
 - [ ] BPMN (Tiago, inputs from everyone)  
-  - [ ] Refine BPMN  
+  - [x] Refine BPMN  
   - [ ] Describe BPMN  
 - [ ] Class diagram (X)  
   - [ ] Create class diagram  
