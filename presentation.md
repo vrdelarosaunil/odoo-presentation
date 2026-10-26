@@ -25,6 +25,9 @@ Creating a quote is the first step of the sales process. Following customer cont
 ![](images/new-quotation.png)
 1. On the New Quotation page, fill in the necessary information, such as customer and products: 
 ![](images/quotation-empty.png)
+1. To define the customer's preferred delivery method, click on "Other Info" and in the Incoterm field, select from the list:
+![](images/Quotation_other_info.png)
+![](images/Incoterms_List.png)
 1. Once the quotation has all the necessary information, click on the "Save manually" button. Alternatively, you can click the "Preview" button, which will also save the quote and then display a preview of the quote as seen by the customer on their end of Odoo: 
 ![](images/save-quotation.png)
 ![](images/sales-order-list.png)
